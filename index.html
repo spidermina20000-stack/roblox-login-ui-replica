@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Logo -->
+            <div class="logo-section">
+                <svg class="roblox-logo" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M2 2h4v4H2V2m6 0h4v4H8V2m6 0h4v4h-4V2M2 8h4v4H2V8m6 0h4v4H8V8m6 0h4v4h-4V8M2 14h4v4H2v-4m6 0h4v4H8v-4m6 0h4v4h-4v-4M2 20h4v4H2v-4m6 0h4v4H8v-4m6 0h4v4h-4v-4"/>
+                </svg>
+            </div>
+
+            <!-- Login Heading -->
+            <h1 class="login-heading">Log In</h1>
+
+            <!-- Form -->
+            <form id="loginForm" class="login-form">
+                <!-- Username/Email Input -->
+                <div class="form-group">
+                    <label for="username" class="form-label">Username or Email</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        class="form-input" 
+                        placeholder="Enter your username or email"
+                        required
+                    >
+                </div>
+
+                <!-- Password Input -->
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="password-wrapper">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            class="form-input" 
+                            placeholder="Enter your password"
+                            required
+                        >
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Remember Me -->
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe" class="checkbox">
+                    <label for="rememberMe" class="checkbox-label">Remember me</label>
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-button">Log In</button>
+
+                <!-- Forgot Password -->
+                <div class="forgot-password">
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+            </form>
+
+            <!-- Divider -->
+            <div class="divider">
+                <span>Don't have an account?</span>
+            </div>
+
+            <!-- Signup Link -->
+            <button type="button" class="signup-button">Sign Up</button>
+
+            <!-- Language and Footer -->
+            <div class="footer-section">
+                <div class="language-selector">
+                    <select id="language" class="language-select">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="pt">Português</option>
+                        <option value="ja">日本語</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <a href="#" class="footer-link">About</a>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Careers</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Help</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
